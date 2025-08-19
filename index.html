@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RT Gutters & Home Solutions - Professional Gutter Services</title>
+    <meta name="description" content="Reliable solutions for gutter installation and maintenance to protect your home.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo svg {
+            height: 60px;
+            width: auto;
+            max-width: 280px;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+            max-width: 280px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #d2691e;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('gutterPicture.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: 300;
+        }
+
+        .hero-subtitle {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .hero-description {
+            max-width: 600px;
+            margin: 2rem auto;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            background: #d2691e;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #b8571a;
+        }
+
+        /* Services Section */
+        .services {
+            background: #2c3e50;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .services-description {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #bdc3c7;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 6rem 0;
+            background: linear-gradient(rgba(248,249,250,0.9), rgba(248,249,250,0.9)), url('gutter2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefits-column {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefits-column:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .benefits-column h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            text-align: center;
+            font-weight: 600;
+            border-bottom: 3px solid #d2691e;
+            padding-bottom: 1rem;
+        }
+
+        .services-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0;
+            padding: 2rem;
+            background: rgba(248, 249, 250, 0.8);
+            border-radius: 10px;
+            border-left: 4px solid #d2691e;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .benefit-item:hover {
+            background: rgba(210, 105, 30, 0.05);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .benefit-item .service-content {
+            flex: 1;
+        }
+
+        .benefit-item h4 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #d2691e;
+            font-weight: 600;
+            min-width: 200px;
+        }
+
+        .benefit-item p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .benefits-column > p {
+            background: rgba(210, 105, 30, 0.1);
+            padding: 1.2rem;
+            border-radius: 8px;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .benefit-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .benefit-list li {
+            margin-bottom: 1rem;
+            padding: 0.8rem 1rem 0.8rem 2.5rem;
+            position: relative;
+            color: #555;
+            background: rgba(39, 174, 96, 0.05);
+            border-radius: 8px;
+            border-left: 3px solid #27ae60;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-list li:hover {
+            background: rgba(39, 174, 96, 0.1);
+            transform: translateX(3px);
+        }
+
+        .benefit-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.1rem;
+            background: rgba(39, 174, 96, 0.1);
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background: #fff;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .quote-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .quote-info {
+            text-align: left;
+        }
+        
+        .quote-info h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #d2691e;
+            text-align: center;
+        }
+        
+        .quote-info > p {
+            text-align: center;
+        }
+
+        .quote-info p {
+            margin-bottom: 2rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .contact-info h4 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .contact-info p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .email-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .copy-btn {
+            background: #d2691e;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background: #b8571a;
+        }
+
+        .copy-btn:active {
+            transform: scale(0.95);
+        }
+
+        .contact-info .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            justify-content: flex-start;
+        }
+
+        .contact-info .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #34495e;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            padding: 8px;
+            text-decoration: none;
+        }
+
+        .contact-info .social-icons a:hover {
+            background: #d2691e;
+            transform: translateY(-2px);
+        }
+
+        .contact-info .social-icons svg {
+            width: 100%;
+            height: 100%;
+            fill: #bdc3c7;
+            transition: fill 0.3s ease;
+        }
+
+        .contact-info .social-icons a:hover svg {
+            fill: white;
+        }
+
+        .contact-person {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 0.5rem 0;
+            border: 1px solid #e9ecef;
+        }
+
+        .contact-person.recommended {
+            background: #e8f5e8;
+            border: 2px solid #28a745;
+        }
+
+        .person-info {
+            flex: 1;
+        }
+
+        .person-name {
+            margin: 0 0 0.3rem 0;
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .person-number {
+            margin: 0;
+            color: #666;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .contact-person.recommended .person-name {
+            color: #155724;
+        }
+
+        .contact-person.recommended .person-number {
+            color: #155724;
+        }
+
+        /* Form */
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #d2691e;
+        }
+
+        /* Modal for email fallback */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #d2691e;
+            text-decoration: none;
+        }
+
+        .modal h3 {
+            color: #d2691e;
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        .email-info {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            font-family: monospace;
+            font-size: 0.9rem;
+            white-space: pre-line;
+            border: 1px solid #e9ecef;
+        }
+
+        .modal-button {
+            background: #d2691e;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .modal-button:hover {
+            background: #b8571a;
+            color: white;
+            text-decoration: none;
+        }
+
+        .gmail-btn {
+            background: #db4437;
+        }
+
+        .gmail-btn:hover {
+            background: #c23321;
+        }
+
+        .phone-btn {
+            background: #27ae60;
+        }
+
+        .phone-btn:hover {
+            background: #219a52;
+        }
+
+
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: #d2691e;
+            text-align: center;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            color: #bdc3c7;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .newsletter {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .newsletter input {
+            flex: 1;
+            padding: 0.8rem;
+            border: 1px solid #34495e;
+            border-radius: 5px;
+            background: #34495e;
+            color: white;
+        }
+
+        .newsletter button {
+            background: #d2691e;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #34495e;
+            color: #95a5a6;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #34495e;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            padding: 8px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background: #d2691e;
+            transform: translateY(-2px);
+        }
+
+        .social-icons svg {
+            width: 100%;
+            height: 100%;
+            fill: #bdc3c7;
+            transition: fill 0.3s ease;
+        }
+
+        .social-icons a:hover svg {
+            fill: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .benefit-item {
+                flex-direction: column;
+                padding: 1.5rem;
+            }
+
+            .benefit-item h4 {
+                font-size: 1.2rem;
+                min-width: auto;
+                margin-bottom: 0.8rem;
+            }
+
+            .benefit-item p {
+                font-size: 0.95rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .benefits-column {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .quote-container,
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo2.png" alt="RT Gutters Logo" style="height: 120px;"/>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="careers.html">Apply</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Enhance Your<br>Home with<br>Quality Gutters</h1>
+            <div class="hero-subtitle">
+                <span>Local</span>
+                <span>Reliable</span>
+                <span>Trustworthy</span>
+            </div>
+            <div class="hero-description">
+                Gutters are an essential part of your home's drainage system. They direct rainwater away from your roof, walls, foundation, and landscaping—helping to prevent water damage, erosion, mold growth, and costly repairs. Whether you're building a new home or replacing an old system, choosing the right gutters and maintaining them properly is crucial.
+            </div>
+            <a href="#quote" class="cta-button">Build My Gutter Plan</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Professional Gutter Services</h2>
+            <div class="services-description">
+                In areas like Atlanta and North Georgia, where heavy summer storms are common, a 6‑inch seamless gutter system offers a significant advantage. Compared to standard 5‑inch systems, a 6‑inch gutter can handle up to 50% more water volume, making it far more reliable during intense rainfall events and steep roof runoff conditions.
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefits-column">
+                    <h3>Benefits You'll Actually Notice</h3>
+                    
+                    <div class="benefits-content">
+                        <div class="benefit-item">
+                            <h4>Gutter Covers (Leaf Guards)</h4>
+                            <p>Micro-Mesh or Mesh Screens</p>
+                            <p>Metal screens that keep out leaves and small debris while letting water flow easily. Highly effective in tree-heavy areas but still needs periodic rinsing.</p>
+                        </div>
+
+                        <div class="benefit-item">
+                            <h4>Surface-Tension (Reverse Curve)</h4>
+                            <p>Covers with a curved lip directing water into the gutter while debris falls off.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-content">
+                        <p>Our professional team provides high-quality gutter solutions tailored to your needs, ensuring your home remains safe from water damage and looking its best. Count on us for thorough gutter inspections and prompt maintenance.</p>
+                    </div>
+                </div>
+
+                <div class="benefits-column">
+                    <h3>Protect Your Home Efficiently</h3>
+                    
+                    <div class="benefits-content">
+                        <p>Enhance your home's curb appeal.</p>
+                        <p>Expert solutions for all gutter issues.</p>
+                    </div>
+                    
+                    <div class="benefits-content">
+                        <ul class="benefit-list">
+                            <li>Satisfaction guaranteed with every service</li>
+                            <li>Efficient and reliable installations</li>
+                            <li>Prevent costly water damage today</li>
+                            <li>Affordable rates for quality service</li>
+                            <li>Contact us for a free estimate</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="benefits-column">
+                    <h3>Types of Service</h3>
+                    
+                    <div class="services-grid">
+                        <div class="benefit-item">
+                            <div class="service-content">
+                                <h4>Gutter Installation</h4>
+                                <p>We professionally install new gutters on your home to ensure proper drainage and protect your foundation, roof, and landscaping from water damage.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="service-content">
+                                <h4>Gutter Maintenance</h4>
+                                <p>Regular cleaning and inspection to keep your gutters free of debris and working efficiently. This helps prevent clogs, leaks, and costly repairs.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="service-content">
+                                <h4>Gutter Covers</h4>
+                                <p>We install protective covers or guards that keep leaves and debris out of your gutters—reducing the need for frequent cleanings.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="service-content">
+                                <h4>Custom Metal Work</h4>
+                                <p>We provide custom metal fabrication designed to protect and extend the life of your home. Our team can cut and bend metal to wrap securely around your fascia, helping it last two to three times longer while preventing rot.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="service-content">
+                                <h4>Decking</h4>
+                                <p>We design and build custom decks, adding beautiful and functional outdoor living space to your home.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="service-content">
+                                <h4>Fencing</h4>
+                                <p>We install durable and attractive fences to increase your home's security, privacy, and curb appeal.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="service-content">
+                                <h4>Siding</h4>
+                                <p>We replace or install exterior siding to protect your home from the elements and improve its overall appearance and energy efficiency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="quote-section" id="quote">
+        <div class="container">
+            <div class="quote-container">
+                <div class="quote-info">
+                    <h3>Get Your Gutter System Quote</h3>
+                    <p>Reliable Gutters, Exceptional Service—Every Time.</p>
+                    
+                    <div class="contact-info">
+                        <h4>Contacts</h4>
+                        <div class="email-container">
+                            <p>riverathomashomesolutions@gmail.com</p>
+                            <button class="copy-btn" onclick="copyEmail()">Copy</button>
+                        </div>
+                        <div class="contact-person">
+                            <div class="person-info">
+                                <p class="person-name">Aidan Thomas: Co-Owner</p>
+                                <p class="person-number">678-218-9227</p>
+                            </div>
+                            <button class="copy-btn" onclick="copyPhone()">Copy</button>
+                        </div>
+                        <div class="contact-person recommended">
+                            <div class="person-info">
+                                <p class="person-name">(Recommended) Arturo Rivera: Co-Owner</p>
+                                <p class="person-number">678-531-0377</p>
+                            </div>
+                            <button class="copy-btn" onclick="copyPhone2()">Copy</button>
+                        </div>
+                        <div class="contact-person">
+                            <div class="person-info">
+                                <p class="person-name">Nick Kosek: Chief of Staff</p>
+                                <p class="person-number">678-362-1886</p>
+                            </div>
+                            <button class="copy-btn" onclick="copyPhone3()">Copy</button>
+                        </div>
+                        
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/rtgutters/" target="_blank" rel="noopener noreferrer" title="Follow us on Instagram">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/riverathomashomesolutions" target="_blank" rel="noopener noreferrer" title="Follow us on Facebook">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-form">
+                    <h3>Protect Your Home from Water Damage</h3>
+                    <form id="quoteForm">
+                        <div class="form-group">
+                            <input type="text" id="customerName" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="customerEmail" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="serviceType" required>
+                                <option value="">Type of service</option>
+                                <option value="installation">Gutter Installation</option>
+                                <option value="maintenance">Gutter Maintenance</option>
+                                <option value="covers">Gutter Covers</option>
+                                <option value="decking">Decking</option>
+                                <option value="fencing">Fencing</option>
+                                <option value="siding">Siding</option>
+                                <option value="custom-metal-work">Custom Metal Work</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="preferredDate" placeholder="Preferred date">
+                        </div>
+                        <button type="submit" class="cta-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Fallback Modal -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Contact Information</h3>
+            <p>We couldn't automatically open your email client, but here are several ways to reach us:</p>
+            
+            <div class="email-info" id="emailContent">
+                <!-- Email content will be inserted here by JavaScript -->
+            </div>
+            
+            <div>
+                <button class="modal-button gmail-btn" id="gmailBtn">Open Gmail</button>
+                <button class="modal-button" id="copyEmailBtn">Copy Email Content</button>
+                <a href="tel:678-218-9227" class="modal-button phone-btn">Call 678-218-9227</a>
+            </div>
+            
+            <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">
+                Or email us directly at: <strong>riverathomashomesolutions@gmail.com</strong>
+            </p>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>RT Gutters & Home Solutions</h4>
+                    <p>RT Gutters & Home Solutions delivers professional installation of seamless 5" aluminum gutters across Atlanta and North Georgia, combining fast local service with expert craftsmanship.</p>
+                    <p>We customize our jobs for a perfect fit, using hidden hanger systems for sleek aesthetics, excellent water-matching capacity, and optimal maintenance.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>RT Gutters & Home Solutions delivers professional installation of seamless 6″ aluminum gutters across Atlanta and Jasper, Georgia, combining fast local service with expert craftsmanship. We customize on-site for a perfect fit, using hidden-hanger systems for sleek aesthetics, excellent water-handling capacity, and minimal maintenance.</p>
+                </div>
+
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© Copyright 2025 Squarespace, LLC. All Rights Reserved.<br>
+                All registered trademarks herein are the property of their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function copyEmail() {
+            const email = 'riverathomashomesolutions@gmail.com';
+            
+            // Create a temporary textarea element
+            const textarea = document.createElement('textarea');
+            textarea.value = email;
+            document.body.appendChild(textarea);
+            
+            // Select and copy the text
+            textarea.select();
+            textarea.setSelectionRange(0, 99999); // For mobile devices
+            
+            try {
+                document.execCommand('copy');
+                
+                // Find the button that was clicked
+                const button = event.target;
+                const originalText = button.textContent;
+                
+                // Show feedback
+                button.textContent = 'Copied!';
+                button.style.background = '#28a745';
+                
+                // Reset button after 2 seconds
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '#d2691e';
+                }, 2000);
+                
+            } catch (err) {
+                console.error('Failed to copy email: ', err);
+                alert('Copy failed. Please copy manually.');
+            }
+            
+            // Remove the temporary element
+            document.body.removeChild(textarea);
+        }
+
+        function copyPhone() {
+            const phone = '678-218-9227';
+            
+            // Create a temporary textarea element
+            const textarea = document.createElement('textarea');
+            textarea.value = phone;
+            document.body.appendChild(textarea);
+            
+            // Select and copy the text
+            textarea.select();
+            textarea.setSelectionRange(0, 99999); // For mobile devices
+            
+            try {
+                document.execCommand('copy');
+                
+                // Find the button that was clicked
+                const button = event.target;
+                const originalText = button.textContent;
+                
+                // Show feedback
+                button.textContent = 'Copied!';
+                button.style.background = '#28a745';
+                
+                // Reset button after 2 seconds
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '#d2691e';
+                }, 2000);
+                
+            } catch (err) {
+                console.error('Failed to copy phone: ', err);
+                alert('Copy failed. Please copy manually.');
+            }
+            
+            // Remove the temporary element
+            document.body.removeChild(textarea);
+        }
+
+        function copyPhone2() {
+            const phone = '678-531-0377';
+            
+            // Create a temporary textarea element
+            const textarea = document.createElement('textarea');
+            textarea.value = phone;
+            document.body.appendChild(textarea);
+            
+            // Select and copy the text
+            textarea.select();
+            textarea.setSelectionRange(0, 99999); // For mobile devices
+            
+            try {
+                document.execCommand('copy');
+                
+                // Find the button that was clicked
+                const button = event.target;
+                const originalText = button.textContent;
+                
+                // Show feedback
+                button.textContent = 'Copied!';
+                button.style.background = '#28a745';
+                
+                // Reset button after 2 seconds
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '#d2691e';
+                }, 2000);
+                
+            } catch (err) {
+                console.error('Failed to copy phone: ', err);
+                alert('Copy failed. Please copy manually.');
+            }
+            
+            // Remove the temporary element
+            document.body.removeChild(textarea);
+        }
+
+        function copyPhone3() {
+            const phone = '678-362-1886';
+            
+            // Create a temporary textarea element
+            const textarea = document.createElement('textarea');
+            textarea.value = phone;
+            document.body.appendChild(textarea);
+            
+            // Select and copy the text
+            textarea.select();
+            textarea.setSelectionRange(0, 99999); // For mobile devices
+            
+            try {
+                document.execCommand('copy');
+                
+                // Find the button that was clicked
+                const button = event.target;
+                const originalText = button.textContent;
+                
+                // Show feedback
+                button.textContent = 'Copied!';
+                button.style.background = '#28a745';
+                
+                // Reset button after 2 seconds
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '#d2691e';
+                }, 2000);
+                
+            } catch (err) {
+                console.error('Failed to copy phone: ', err);
+                alert('Copy failed. Please copy manually.');
+            }
+            
+            // Remove the temporary element
+            document.body.removeChild(textarea);
+        }
+
+
+
+        // Handle form submission with smart detection and fallbacks
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('quoteForm');
+            const modal = document.getElementById('emailModal');
+            const closeBtn = document.querySelector('.close');
+            const gmailBtn = document.getElementById('gmailBtn');
+            const copyEmailBtn = document.getElementById('copyEmailBtn');
+            const emailContent = document.getElementById('emailContent');
+            
+            // Close modal when clicking X or outside
+            closeBtn.onclick = function() {
+                modal.style.display = 'none';
+            }
+            
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+                
+                // Get form data
+                const customerName = document.getElementById('customerName').value;
+                const customerEmail = document.getElementById('customerEmail').value;
+                const serviceType = document.getElementById('serviceType').value;
+                const preferredDate = document.getElementById('preferredDate').value;
+                
+                // Validate required fields
+                if (!customerName || !customerEmail || !serviceType) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+                
+                // Create email content
+                const subject = 'New Service Request from ' + customerName;
+                const emailBody = 
+                    'New service request details:\n\n' +
+                    'Customer Name: ' + customerName + '\n' +
+                    'Customer Email: ' + customerEmail + '\n' +
+                    'Service Type: ' + serviceType + '\n' +
+                    'Preferred Date: ' + (preferredDate || 'Not specified') + '\n\n' +
+                    'Please contact the customer at their provided email address to discuss the service request.';
+                
+                // Try mailto first (works on Mac and systems with email clients)
+                const encodedSubject = encodeURIComponent(subject);
+                const encodedBody = encodeURIComponent(emailBody);
+                const mailtoLink = 'mailto:riverathomashomesolutions@gmail.com?subject=' + encodedSubject + '&body=' + encodedBody;
+                
+                // Attempt to detect if mailto works
+                let mailtoWorked = false;
+                
+                try {
+                    // Create a hidden iframe to test mailto
+                    const testFrame = document.createElement('iframe');
+                    testFrame.style.display = 'none';
+                    document.body.appendChild(testFrame);
+                    
+                    // Try to open mailto
+                    window.location.href = mailtoLink;
+                    
+                    // If we get here quickly, mailto probably worked
+                    setTimeout(function() {
+                        document.body.removeChild(testFrame);
+                        
+                        // Check if we're still on the same page (mailto didn't work)
+                        if (document.hasFocus()) {
+                            showFallbackModal(subject, emailBody, customerName, customerEmail, serviceType, preferredDate);
+                        } else {
+                            // Mailto probably worked, show success message
+                            setTimeout(function() {
+                                alert('Thank you for your request! Your email client should open with a pre-filled message. Please send the email to complete your request.');
+                                form.reset();
+                            }, 500);
+                        }
+                    }, 1000);
+                    
+                } catch (error) {
+                    // Mailto failed, show fallback
+                    showFallbackModal(subject, emailBody, customerName, customerEmail, serviceType, preferredDate);
+                }
+            });
+            
+            function showFallbackModal(subject, emailBody, customerName, customerEmail, serviceType, preferredDate) {
+                // Populate modal with email content
+                emailContent.innerHTML = 
+                    '<strong>To:</strong> riverathomashomesolutions@gmail.com<br><br>' +
+                    '<strong>Subject:</strong> ' + subject + '<br><br>' +
+                    '<strong>Message:</strong><br>' + emailBody.replace(/\n/g, '<br>');
+                
+                // Setup Gmail button
+                const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=riverathomashomesolutions@gmail.com&su=' + 
+                    encodeURIComponent(subject) + '&body=' + encodeURIComponent(emailBody);
+                
+                gmailBtn.onclick = function() {
+                    window.open(gmailUrl, '_blank');
+                    modal.style.display = 'none';
+                    form.reset();
+                };
+                
+                // Setup copy button
+                copyEmailBtn.onclick = function() {
+                    const textToCopy = 
+                        'To: riverathomashomesolutions@gmail.com\n' +
+                        'Subject: ' + subject + '\n\n' +
+                        emailBody;
+                    
+                    if (navigator.clipboard && window.isSecureContext) {
+                        navigator.clipboard.writeText(textToCopy).then(function() {
+                            copyEmailBtn.textContent = 'Copied!';
+                            copyEmailBtn.style.background = '#27ae60';
+                            setTimeout(function() {
+                                copyEmailBtn.textContent = 'Copy Email Content';
+                                copyEmailBtn.style.background = '#d2691e';
+                            }, 2000);
+                        });
+                    } else {
+                        // Fallback for older browsers
+                        const textArea = document.createElement('textarea');
+                        textArea.value = textToCopy;
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        try {
+                            document.execCommand('copy');
+                            copyEmailBtn.textContent = 'Copied!';
+                            copyEmailBtn.style.background = '#27ae60';
+                            setTimeout(function() {
+                                copyEmailBtn.textContent = 'Copy Email Content';
+                                copyEmailBtn.style.background = '#d2691e';
+                            }, 2000);
+                        } catch (err) {
+                            console.error('Failed to copy: ', err);
+                        }
+                        document.body.removeChild(textArea);
+                    }
+                };
+                
+                // Show modal
+                modal.style.display = 'block';
+                form.reset();
+            }
+        });
+    </script>
+</body>
+</html>
